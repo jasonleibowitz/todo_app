@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require backbone-rails
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./views
+//= require router
+$(document).ready(function(){
+  console.log('loaded bro');
+  TodoApp.start();
+})

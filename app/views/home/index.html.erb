@@ -1,0 +1,16 @@
+<h1>To Do List</h1>
+<a href="/#add"><h4>Add</h4></a>
+<div id="app"></div>
+<div id="todo"></div>
+<div id="form"></div>
+
+<script type="text/template" class="todoViewTemplate">
+  <h3 class="<%%= status %>">
+    <input type=checkbox <%%= status == "complete" ? "checked=checked" : "" %>/> <%%= description %> <a href="/#todos/<%%= id %>">☞</a>
+  </h3>
+</script>
+
+<script type="text/template" class="addFormTemplate">
+  <input type="text" placeholder="description" id="description"> <br />
+  <button id="add">add</button>
+</script>
